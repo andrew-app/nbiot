@@ -1,6 +1,6 @@
 numTrBlks = 100;        % Number of simulated transport blocks
 SNRdB = -35:1:0;      % SNR range in dB
-ireps = [0]; 
+ireps = [5]; 
 
 NPDSCHDataType = 'NotBCCH';
 

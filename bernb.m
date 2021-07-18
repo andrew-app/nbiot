@@ -1,6 +1,6 @@
 numTrBlks = 100;        % Number of simulated transport blocks
-SNRdB = -35:1:0;      % SNR range in dB
-ireps = [5]; 
+SNRdB = -40:1:40;      % SNR range in dB
+ireps = [0]; 
 
 NPDSCHDataType = 'NotBCCH';
 
@@ -283,6 +283,9 @@ for repIdx = 1:numel(ireps)
     else
         legendstr = [legendstr ['NRep = ' num2str(npdsch.NRep)]]; %#ok<AGROW>
     end
+    
+    
+    
     figure(fh);
     plot(SNRdB, bler, '-o');
 
